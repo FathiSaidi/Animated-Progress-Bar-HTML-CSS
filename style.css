@@ -1,0 +1,154 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #264fb0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 50%;
+    border: 2px solid #eee;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.box {
+    padding: 10px 15px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #dadada;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.count {
+    color: #fff;
+    font-size: 15px;
+}
+
+.bar {
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.skill-html {
+    background-color: #560eb5;
+    animation-name: html-anim;
+}
+
+.skill-css {
+    background-color: #2ab50e;
+    animation-name: css-anim;
+}
+
+.skill-js {
+    background-color: #a00c0c;
+    animation-name: js-anim;
+}
+
+.skill-jq {
+    background-color: #aa0eb5;
+    animation-name: jq-anim;
+}
+
+.skill-php {
+    background-color: #0fa6ab;
+    animation-name: php-anim;
+}
+
+.skill-ms {
+    background-color: #e09603;
+    animation-name: ms-anim;
+}
+
+@keyframes html-anim {
+    to {
+        width: 90%; 
+    }
+}
+
+@keyframes css-anim {
+    to {
+        width: 80%; 
+    }
+}
+
+@keyframes js-anim {
+    to {
+        width: 70%; 
+    }
+}
+
+@keyframes jq-anim {
+    to {
+        width: 50%; 
+    }
+}
+
+@keyframes php-anim {
+    to {
+        width: 60%; 
+    }
+}
+
+@keyframes ms-anim {
+    to {
+        width: 40%; 
+    }
+}
+
+/*  Resposive  */
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    .container {
+        width: 80%;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 50%;
+    }
+}
